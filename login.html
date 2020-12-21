@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+<form method="post" action="index.php" onSubmit="return validateForm(this)">
+    <input type="hidden" name="action" value="login"/>
+    <h3>Login</h3>
+    <div class="emailFieldContent">
+        <input type='text' name='email' class="input" placeholder="Email"/><br>
+    </div>
+
+    <div class="passwordField">
+        <input type='password' name='password' placeholder="Password"/> <br>
+    </div>
+    <div id="formButtons">
+        <input type='submit' value='Login' class="button inner"/>
+        <a href="project1index.html" target="_self" class="button inner">Home</a>
+    </div>
+    <div><a href='registration.html'>Not Registered? Register</a></div>
+</form>
+</body>
+</html>
